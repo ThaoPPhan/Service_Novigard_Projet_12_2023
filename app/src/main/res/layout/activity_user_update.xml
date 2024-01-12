@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginPage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/wave9">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Modifier un compte"
+            android:textColor="@color/white"
+            android:textSize="40dp">
+        </TextView>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+        </Space>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nom d'utilisateur:"
+                    android:textSize="25sp" />
+
+                <EditText
+                    android:id="@+id/newUsername"
+                    android:layout_width="214dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"></EditText>
+            </LinearLayout>
+
+        </LinearLayout>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+        </Space>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:text="Mot de passe:"
+                    android:textSize="25sp" />
+
+                <EditText
+                    android:id="@+id/newPassword"
+                    android:layout_width="252dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:textSize="20dp"></EditText>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40dp"></Space>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:text="Role:"
+                    android:textSize="25sp" />
+
+                <EditText
+                    android:id="@+id/userType"
+                    android:layout_width="349dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:ems="10"
+                    android:inputType="text" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="60dp">
+        </Space>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/updateService"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/lightBlue"
+                android:fontFamily="sans-serif"
+                android:text="Mettre à jour compte"
+                android:textColor="@color/white"
+                android:textSize="20sp"></Button>
+
+            <Button
+                android:id="@+id/btn_delete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Supprimer compte"
+                android:backgroundTint="@color/lightBlue"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif"></Button>
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Annuler"
+                android:backgroundTint="@color/lightBlue"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif"></Button>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

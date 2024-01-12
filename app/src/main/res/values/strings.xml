@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Projet - Service Novigrad</string>
+    <string name="nom_utilisateur">[nom d\'utilisateur]</string>
+    <string name="role_utilisateur">[role de l\'utilisateur]</string>
+    <string name="title_activity_admin_menu">admin_menu</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nom_service">[Nom du service]</string>
+    <string name="description_service">[Description du service]</string>
+    <string name="page_daccueil">Page d\'accueil</string>
+    <string name="visionner_les_comptes">Visionner les comptes</string>
+    <string name="visionner_les_services">Visionner les services</string>
+</resources>

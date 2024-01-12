@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/wave9"
+        android:orientation="vertical"
+        android:gravity="top">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Service Novigrad"
+            android:textColor="@color/white"
+            android:textSize="40sp"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Page d'accueil"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_marginStart="10dp"
+            android:fontFamily="sans-serif"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:textAlignment="textStart"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="40dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bienvenue "
+                android:textColor="@color/lightBlue"
+                android:textSize="30sp"
+                android:fontFamily="sans-serif"/>
+
+            <TextView
+                android:id="@+id/userNameU"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="@string/nom_utilisateur"
+                android:textColor="@color/lightBlue"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/lightBlue"
+                android:textSize="30sp"
+                android:text=" !"
+                android:fontFamily="sans-serif"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:textAlignment="textStart"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grey"
+                android:textSize="25sp"
+                android:text="Voici votre rôle: "
+                android:fontFamily="sans-serif"/>
+
+            <TextView
+                android:id="@+id/userStatusAdminU"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="@string/role_utilisateur"
+                android:textColor="@color/grey"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/clientViewService"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Voir services" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Se déconnecter"
+            android:backgroundTint="@color/lightBlue"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif"
+            android:id="@+id/adminSeDeconnecter"/>
+    </LinearLayout>
+</RelativeLayout>

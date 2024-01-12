@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginPage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/wave10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Nom du service : "
+            android:textColor="@color/white"
+            android:textSize="40sp"></TextView>
+
+        <EditText
+            android:id="@+id/serviceNameEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="sans-serif-medium"
+            android:ems="10"
+            android:inputType="text"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="40sp"
+            android:maxLines="3"
+            android:scrollbars="vertical"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="50dp"></Space>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description du service : "
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp">
+        </TextView>
+
+        <EditText
+            android:id="@+id/serviceDescriptionEditText"
+            android:layout_width="380dp"
+            android:layout_height="211dp"
+            android:layout_marginStart="10dp"
+            android:ems="10"
+            android:fontFamily="sans-serif-medium"
+            android:inputType="textMultiLine"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:maxLines="1"
+            android:scrollbars="vertical"/>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:gravity="bottom">
+            <GridLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="5"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="15dp">
+                <CheckBox
+                    android:id="@+id/dobCheckBox"
+                    android:text="Date de naissance requise">
+                </CheckBox>
+                <CheckBox
+                    android:id="@+id/addressCheckBox"
+                    android:text="Addresse requise">
+                </CheckBox>
+                <CheckBox
+                    android:id="@+id/photoCheckBox"
+                    android:text="Photo requise">
+                </CheckBox>
+                <CheckBox
+                    android:id="@+id/citizenStatusCheckBox"
+                    android:text="Statut de citoyenneté requis">
+                </CheckBox>
+                <CheckBox
+                    android:id="@+id/proofResidenceCheckBox"
+                    android:text="Preuve de résidence">
+                </CheckBox>
+            </GridLayout>
+
+            <Button
+                android:id="@+id/saveService"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sauvegarder"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/backToServiceListAdmin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Annuler"
+                android:textColor="@color/black"
+                android:textSize="20dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
